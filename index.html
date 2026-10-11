@@ -1,1 +1,118 @@
-<h1> 欢迎来到小宇的主页！</h1>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小宇的主页</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        .card {
+            width: 380px;
+            padding: 40px;
+            background: white;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            animation: show 1s ease;
+        }
+
+        @keyframes show {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            border-radius: 50%;
+            background: #667eea;
+            color: white;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            margin-top: 20px;
+            color: #333;
+        }
+
+        p {
+            margin: 15px 0;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            background: #667eea;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #764ba2;
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="avatar">
+            小
+        </div>
+
+        <h1>你好，我是小宇</h1>
+
+        <p>
+            欢迎来到我的个人主页！<br>
+            这是我的第一个网页。
+        </p>
+
+        <button onclick="hello()">
+            点我一下
+        </button>
+
+    </div>
+
+
+    <script>
+        function hello(){
+            alert("你好，小宇！继续学习编程吧！");
+        }
+    </script>
+
+</body>
+</html>
